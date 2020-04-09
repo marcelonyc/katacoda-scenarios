@@ -14,10 +14,11 @@ done
 
 echo "Create Nginix"
 kubectl run nginx --image=nginx --replicas=1
-kubectl get pods
+
+kubectl get pods >>  deployment.log 2>&1
 
 echo "Build image"
-docker build -t mlrun/jupy - < Dockerfile.jupy
+docker build -t mlrun/jupy - < Dockerfile.jupy >>  deployment.log   2>&1
 
 echo "Deploy Jupyter"
-kubectl apply -f mljupy.yaml
+kubectl apply -f mljupy.yaml >>  deployment.log   2>&1
