@@ -22,3 +22,7 @@ docker build -t mlrun/jupy - < Dockerfile.jupy >>  deployment.log   2>&1
 
 echo "Deploy Jupyter"
 kubectl apply -f mljupy.yaml >>  deployment.log   2>&1
+i
+echo "+++++++++++++++++++++" >>  deployment.log   2>&1
+echo "DEPLOYMENT COMPLETED"  >>  deployment.log   2>&1
+echo "+++++++++++++++++++++" >>  deployment.log   2>&1
