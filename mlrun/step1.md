@@ -1,9 +1,7 @@
-This is your first step.
+## Wait for deployment to complete
 
-## Task
+Run this command and wait until you "DEPLOYMENT COMPLETED"
 
-This is an _example_ of creating a scenario and running a **command**
-
-Wait for deploymewnt to complete:
+Deployment takes about 5 minutes to complete
 
 `tail -f deployment.log`{{execute}}
