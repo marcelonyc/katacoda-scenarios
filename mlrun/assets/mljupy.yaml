@@ -41,7 +41,7 @@ spec:
         - --NotebookApp.password=''
         - --NotebookApp.default_url="/lab"
       volumes:
-        - name: mlrun-db
+        - name: notebooks
           hostPath:
             path: /tmp/mlrun
             type: Directory
