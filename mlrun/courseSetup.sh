@@ -9,7 +9,12 @@ do
         sleep 10
 	kubectl get pods > /dev/null
 done
+
+echo "Create Nginix"
 kubectl run nginx --image=nginx --replicas=1
 
+echo "Build image"
+docker build -t mlrun/jupy - < Dockerfile.jupy
 
-cd k8s/image && docker build -t mlrun/jupy . && kubectl apply -f mljupy.yaml
+echo "Deploy Jupyter"
+kubectl apply -f mljupy.yaml
