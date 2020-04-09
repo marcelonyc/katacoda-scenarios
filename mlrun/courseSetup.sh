@@ -1,3 +1,5 @@
+#! /bin/bash 
+
 # Wait for Kubernetes to come up
 
 exec 2>&1
@@ -12,6 +14,7 @@ done
 
 echo "Create Nginix"
 kubectl run nginx --image=nginx --replicas=1
+kubectl get pods
 
 echo "Build image"
 docker build -t mlrun/jupy - < Dockerfile.jupy
