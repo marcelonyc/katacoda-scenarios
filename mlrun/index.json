@@ -4,15 +4,34 @@
   "difficulty": "beginner",
   "time": "30 minutes",
   "details": {
-    "steps": [{
+    "steps": [
+      {
       "title": "Deploy Jupyter and MLRUN",
       "text": "step1.md"
-    }],
+      }
+      {
+      "title": "Open Jupyter and MLRUN",
+      "text": "step2.md"
+      }
+    ],
     "intro": {
       "text": "intro.md",
       "credits": "",
       "courseData": "courseSetup.sh"
     },
+    "assets": {
+        "client": [
+     		{
+          	"file": "Dockerfile.jupy",
+	              "target": "~/"
+        	},
+     		{
+          	"file": "mljupy.yaml",
+	              "target": "~/"
+        	}
+       ]
+      }
+     },
     "finish": {
       "text": "finish.md"
     }
