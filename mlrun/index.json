@@ -10,7 +10,7 @@
     }],
     "intro": {
       "text": "intro.md",
-      "credits": ""
+      "credits": "",
       "courseData": "courseSetup.sh"
     },
     "finish": {
