@@ -43,6 +43,7 @@ do
      sleep 10
      kubectl get pods|grep jupy|grep Runn > /dev/null
 done
+chown -R 1000 /tmp/mlrun
 echo "+++++++++++++++++++++" >>  deployment.log   2>&1
 echo "DEPLOYMENT COMPLETED"  >>  deployment.log   2>&1
 echo "+++++++++++++++++++++" >>  deployment.log   2>&1
