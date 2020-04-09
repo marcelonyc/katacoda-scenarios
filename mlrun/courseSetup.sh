@@ -8,6 +8,4 @@ do
 done
 kubectl run nginx --image=nginx --replicas=1
 
-docker build -t mlrun/jupy - < k8s/Dockerfile.jupy
-
-kubectl apply -f k8s/mljupy.yaml
+cd k8s/image && docker build -t mlrun/jupy . && kubectl apply -f mljupy.yaml
