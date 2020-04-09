@@ -9,11 +9,11 @@ You should be able to connect in a few minutes to:
 
 
 ## Jupyter Notebooks 
-https://[[HOST_SUBDOMAIN]]-8888-[[KATACODA_HOST]].environments.katacoda.com
+https://[[HOST_SUBDOMAIN]]-30040-[[KATACODA_HOST]].environments.katacoda.com
 
 
 ## MLRUn UI
-https://[[HOST_SUBDOMAIN]]-8889-[[KATACODA_HOST]].environments.katacoda.com
+https://[[HOST_SUBDOMAIN]]-30088-[[KATACODA_HOST]].environments.katacoda.com
 
 
 `echo 'Hello World'`{{execute}}

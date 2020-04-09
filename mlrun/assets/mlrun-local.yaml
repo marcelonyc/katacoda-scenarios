@@ -60,7 +60,7 @@ spec:
     app: mlrun-api
   ports:
   - protocol: TCP
-    nodePort: 8080
+    nodePort: 30088
     port: 8080
     targetPort: 8080
 ---
