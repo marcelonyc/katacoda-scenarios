@@ -30,6 +30,13 @@ kubectl apply -f mljupy.yaml >>  deployment.log   2>&1
 echo "Deploy MLRun API"
 kubectl apply -f mlrun-local.yaml >>  deployment.log   2>&1
 
+kubectl get pods|grep mlrun-ui > /dev/null
+while [ $? -ne 0 ]
+do
+     sleep 10
+     kubectl get pods|grep mlrun-ui > /dev/null
+done
+
 kubectl get pods|grep jupy|grep Runn > /dev/null
 while [ $? -ne 0 ]
 do
