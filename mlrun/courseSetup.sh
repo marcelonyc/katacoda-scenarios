@@ -7,3 +7,7 @@ do
 	kubectl get pods > /dev/null
 done
 kubectl run nginx --image=nginx --replicas=1
+
+docker build -t mlrun/jupy - < k8s/Dockerfile.jupy
+
+kubectl apply -f k8s/mljupy.yaml

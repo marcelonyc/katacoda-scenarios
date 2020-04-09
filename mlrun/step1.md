@@ -8,12 +8,12 @@ This is an _example_ of creating a scenario and running a **command**
 You should be able to connect in a few minutes to: 
 
 
-## Generated Web Link
+## Jupyter Notebooks 
+https://[[HOST_SUBDOMAIN]]-8888-[[KATACODA_HOST]].environments.katacoda.com
 
-https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
 
-## Markdown 
-<pre>https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com</pre>
+## MLRUn UI
+https://[[HOST_SUBDOMAIN]]-8889-[[KATACODA_HOST]].environments.katacoda.com
 
 
 `echo 'Hello World'`{{execute}}
