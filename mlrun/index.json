@@ -20,15 +20,18 @@
                 },
                 {
                     "file": "add_reg.py",
-                    "target": "~/"
+                    "target": "~/",
+		    "chmod": "+x"
                 },
                 {
                     "file": "setup_registry.sh",
-                    "target": "~/"
+                    "target": "~/",
+		    "chmod": "+x"
                 },
                 {
                     "file": "setup_mlrunapi.sh",
-                    "target": "~/"
+                    "target": "~/",
+		    "chmod": "+x"
                 }
             ]
         },
