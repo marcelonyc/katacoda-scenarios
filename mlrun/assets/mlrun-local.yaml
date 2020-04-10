@@ -33,7 +33,7 @@ spec:
         - name: MLRUN_HTTPDB__DATA_VOLUME
           value: "/home/jovyan/data"
         - name: DEFAULT_DOCKER_REGISTRY
-          value: "registry.test.training.katacoda.com:4567"
+          value: "{{REGISTRY}}"
         - name: DEFAULT_DOCKER_SECRET
           value: ""
         ports:

@@ -5,6 +5,8 @@
 exec 2>&1
 exec >> deployment.log
 
+
+
 kubectl get pods > /dev/null
 while [ $? -ne 0 ]
 do
@@ -20,6 +22,8 @@ kubectl get pods >>  deployment.log 2>&1
 mkdir /tmp/mlrun
 mkdir /tmp/mlrun/data
 
+./setup_registry.sh
+
 echo "Build image"
 docker build -t mlrun/jupy - < Dockerfile.jupy >>  deployment.log   2>&1
 
@@ -28,7 +32,7 @@ kubectl apply -f mljupy.yaml >>  deployment.log   2>&1
 
 
 echo "Deploy MLRun API"
-kubectl apply -f mlrun-local.yaml >>  deployment.log   2>&1
+./setup_mlrun_api.sh
 
 kubectl get pods|grep mlrun-ui > /dev/null
 while [ $? -ne 0 ]

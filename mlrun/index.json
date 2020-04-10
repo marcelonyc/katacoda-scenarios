@@ -17,6 +17,18 @@
                 {
                     "file": "mlrun-local.yaml",
                     "target": "~/"
+                },
+                {
+                    "file": "add_reg.py",
+                    "target": "~/"
+                },
+                {
+                    "file": "setup_registry.sh",
+                    "target": "~/"
+                },
+                {
+                    "file": "setup_mlrunapi.sh",
+                    "target": "~/"
                 }
             ]
         },

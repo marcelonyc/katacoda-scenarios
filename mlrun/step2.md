@@ -17,6 +17,5 @@ https://[[HOST_SUBDOMAIN]]-30068-[[KATACODA_HOST]].environments.katacoda.com
 
 ## MLRUn API
 This endpoint enables external communication with the MLRun API
-<pre>https://[[HOST_SUBDOMAIN]]-30088-[[KATACODA_HOST]].environments.katacoda.com</pre>
+https://[[HOST_SUBDOMAIN]]-30088-[[KATACODA_HOST]].environments.katacoda.com
 
-`echo 'Hello World'`{{execute}}
