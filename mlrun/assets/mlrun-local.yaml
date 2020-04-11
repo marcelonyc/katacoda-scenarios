@@ -42,12 +42,11 @@ spec:
         args: []
         volumeMounts:
         - mountPath: /home/jovyan/data
-          name: mlrun
+          name: pvclocal
       volumes:
-        - name: mlrun
-          hostPath:
-            path: /tmp/mlrun
-            type: Directory
+        - name: pvclocal
+          persistentVolumeClaim:
+            claimName: pvclocal
       serviceAccountName: mlrun-api
 ---
 kind: Service

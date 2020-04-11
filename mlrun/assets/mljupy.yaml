@@ -30,7 +30,7 @@ spec:
           value: "/home/jovyan/data"
         volumeMounts:
         - mountPath: /home/jovyan/data
-          name: notebooks
+          name: pvclocal
         ports:
         - containerPort: 8888
         command: ["start-notebook.sh"]
@@ -41,10 +41,8 @@ spec:
         - --NotebookApp.password=''
         - --NotebookApp.default_url="/lab"
       volumes:
-        - name: notebooks
-          hostPath:
-            path: /tmp/mlrun
-            type: Directory
+        - name: pvclocal
+          persistentVolumeClaim:                                                                                                                                      claimName: pvclocal    
 
 ---
 kind: Service

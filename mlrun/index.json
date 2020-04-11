@@ -19,6 +19,10 @@
                     "target": "~/"
                 },
                 {
+                    "file": "pv_local.yaml",
+                    "target": "~/"
+                },
+                {
                     "file": "add_reg.py",
                     "target": "~/",
 		    "chmod": "+x"
