@@ -23,6 +23,10 @@
                     "target": "~/"
                 },
                 {
+                    "file": "01-notebook.ipynb",
+                    "target": "~/"
+                },
+                {
                     "file": "add_reg.py",
                     "target": "~/",
 		    "chmod": "+x"

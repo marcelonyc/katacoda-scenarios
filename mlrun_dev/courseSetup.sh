@@ -21,13 +21,13 @@ kubectl run nginx --image=nginx --replicas=1  deployment.log 2>&1
 
 kubectl get pods >>  deployment.log 2>&1
 
-mkdir /tmp/mlrun
+mkdir -p /tmp/mlrun/mlrun
 mkdir /tmp/mlrun/data
 
 ./setup_registry.sh >> deployment.log   2>&1
 
 echo "Build image"
-docker build -t mlrun/jupy - < Dockerfile.jupy >>  deployment.log   2>&1
+##docker build -t mlrun/jupy - < Dockerfile.jupy >>  deployment.log   2>&1
 
 echo "Deploy Jupyter"
 kubectl apply -f mljupy.yaml >>  deployment.log   2>&1
@@ -56,6 +56,9 @@ echo
 echo
 echo
 
+cp *.ipynb /tmp/mlrun/mlrun
 echo "+++++++++++++++++++++" >>  deployment.log   2>&1
 echo "DEPLOYMENT COMPLETED"  >>  deployment.log   2>&1
 echo "+++++++++++++++++++++" >>  deployment.log   2>&1
+
+
