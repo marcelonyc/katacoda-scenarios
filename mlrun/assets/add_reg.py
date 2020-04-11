@@ -6,7 +6,7 @@ file = "/etc/docker/daemon.json"
 
 docker_dict = json.load(open(file,'rb'))
 
-docker_dict["insecure-registries"].append(sys.argv[1])
+docker_dict["insecure-registries"].append(sys.argv[1]+":80")
 
 print (json.dumps(docker_dict))
 
