@@ -50,7 +50,11 @@
             },
             {
                 "text": "step2.md",
-                "title": "Open Jupyter and MLRUN"
+                "title": "Run your first Notebook"
+            },
+            {
+                "text": "step3.md",
+                "title": "Review execution results"
             }
         ]
     },
