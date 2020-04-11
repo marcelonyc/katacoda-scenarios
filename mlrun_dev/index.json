@@ -68,5 +68,5 @@
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
     },
     "time": "30 minutes",
-    "title": "MLRun introduction"
+    "title": "DEVELOPMENT COPY MLRun introduction"
 }
