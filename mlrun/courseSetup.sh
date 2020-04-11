@@ -5,7 +5,7 @@
 exec 2>&1
 exec >> deployment.log
 
-kubectl apply -f pv_local.yaml
+kubectl apply -f pv_local.yaml >> deployment.log   2>&1
 
 kubectl get pods > /dev/null
 while [ $? -ne 0 ]

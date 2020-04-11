@@ -42,9 +42,11 @@ spec:
         - --NotebookApp.default_url="/lab"
       volumes:
         - name: pvclocal
-          persistentVolumeClaim:                                                                                                                                      claimName: pvclocal    
+          persistentVolumeClaim:
+            claimName: pvclocal    
 
 ---
+
 kind: Service
 apiVersion: v1
 metadata:
