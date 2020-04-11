@@ -1,0 +1,72 @@
+{
+    "backend": {
+        "imageid": "kubernetes"
+    },
+    "description": "Intro to MLRun for Experiment tracking",
+    "details": {
+        "assets": {
+            "host01": [
+                {
+                    "file": "Dockerfile.jupy",
+                    "target": "~/"
+                },
+                {
+                    "file": "mljupy.yaml",
+                    "target": "~/"
+                },
+                {
+                    "file": "mlrun-local.yaml",
+                    "target": "~/"
+                },
+                {
+                    "file": "pv_local.yaml",
+                    "target": "~/"
+                },
+                {
+                    "file": "add_reg.py",
+                    "target": "~/",
+		    "chmod": "+x"
+                },
+                {
+                    "file": "setup_registry.sh",
+                    "target": "~/",
+		    "chmod": "+x"
+                },
+                {
+                    "file": "setup_mlrunapi.sh",
+                    "target": "~/",
+		    "chmod": "+x"
+                }
+            ]
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "intro": {
+            "courseData": "courseSetup.sh",
+            "credits": "",
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "text": "step1.md",
+                "title": "Deploy Jupyter and MLRUN"
+            },
+            {
+                "text": "step2.md",
+                "title": "Run your first Notebook"
+            },
+            {
+                "text": "step3.md",
+                "title": "Review execution results"
+            }
+        ]
+    },
+    "difficulty": "beginner",
+    "environment": {
+        "uilayout": "terminal",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+    },
+    "time": "30 minutes",
+    "title": "MLRun introduction"
+}
