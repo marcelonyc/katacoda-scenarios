@@ -23,6 +23,18 @@
                     "target": "~/"
                 },
                 {
+                    "file": "01-notebook.ipynb",
+                    "target": "~/"
+                },
+                {
+                    "file": "functions.py",
+                    "target": "~/"
+                },
+                {
+                    "file": "01-runlocal.ipynb",
+                    "target": "~/"
+                },
+                {
                     "file": "add_reg.py",
                     "target": "~/",
 		    "chmod": "+x"
@@ -33,7 +45,21 @@
 		    "chmod": "+x"
                 },
                 {
-                    "file": "setup_mlrunapi.sh",
+                    "file": "start_mlrun.sh",
+                    "target": "~/",
+		    "chmod": "+x"
+                },
+                {
+                    "file": "setup_jupyter.sh",
+                    "target": "~/",
+		    "chmod": "+x"
+		},
+                {
+                    "file": "mlrunui.yaml",
+                    "target": "~/"
+		},
+                {
+                    "file": "setup_mlrunui.sh",
                     "target": "~/",
 		    "chmod": "+x"
                 }
@@ -64,7 +90,11 @@
     },
     "difficulty": "beginner",
     "environment": {
-        "uilayout": "terminal",
+        "showdashboard": true,
+        "dashboards": [ {"name": "Jupyter Notebooks", "port": 30040},
+		 {"name": "MLRun UI", "port": 30068}
+	],
+        "uilayout": "terminal-iframe",
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
     },
     "time": "30 minutes",
