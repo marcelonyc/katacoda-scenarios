@@ -37,6 +37,11 @@
 		    "chmod": "+x"
                 },
                 {
+                    "file": "start_mlrun.sh",
+                    "target": "/tmp/",
+		    "chmod": "+x"
+                },
+                {
                     "file": "setup_jupyter.sh",
                     "target": "~/",
 		    "chmod": "+x"

@@ -36,6 +36,12 @@ echo "Deploy Jupyter"
 echo "Deploy MLRun API"
 ./setup_mlrunui.sh >> deployment.log   2>&1
 
+echo
+echo 
+echo "+++++++++++++++++++++++++++++++++"
+echo "  WAITING FOR SERVICES TO START "
+echo "+++++++++++++++++++++++++++++++++"
+
 kubectl get pods|grep jupy|grep Runn > /dev/null
 while [ $? -ne 0 ]
 do
@@ -50,6 +56,9 @@ echo
 echo
 
 cp *.ipynb /tmp/mlrun/mlrun_course/.
+
+kubectl exec -d `kubectl get pods |grep jupyter |awk '{print $1}'` /tmp/start_mlrun.sh
+
 echo "+++++++++++++++++++++" >>  deployment.log   2>&1
 echo "DEPLOYMENT COMPLETED"  >>  deployment.log   2>&1
 echo "+++++++++++++++++++++" >>  deployment.log   2>&1
