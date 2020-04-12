@@ -28,6 +28,18 @@ spec:
           value: "http://mlrun-api:8080"
         - name: MLRUN_ARTIFACT_PATH
           value: "/home/jovyan/data"
+        - name: MLRUN_LOG_LEVEL
+          value: ERROR
+        - name: MLRUN_HTTPDB__DB_TYPE
+          value: filerundb
+        - name: MLRUN_HTTPDB__DIRPATH
+          value: "/mlrun/db"
+        - name: MLRUN_HTTPDB__DATA_VOLUME
+          value: "/home/jovyan/data"
+        - name: DEFAULT_DOCKER_REGISTRY
+          value: "{{REGISTRY}}"
+        - name: DEFAULT_DOCKER_SECRET
+          value: ""          
         volumeMounts:
         - mountPath: /home/jovyan/data
           name: pvclocal
