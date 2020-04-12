@@ -90,7 +90,7 @@
         "dashboards": [ {"name": "Jupyter Notebooks", "port": 30040},
 		 {"name": "MLRun UI", "port": 30068}
 	],
-        "uilayout": "terminal",
+        "uilayout": "terminal-iframe",
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
     },
     "time": "30 minutes",
