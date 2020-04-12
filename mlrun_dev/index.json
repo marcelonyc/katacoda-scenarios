@@ -38,7 +38,7 @@
                 },
                 {
                     "file": "start_mlrun.sh",
-                    "target": "/tmp/",
+                    "target": "~/",
 		    "chmod": "+x"
                 },
                 {
