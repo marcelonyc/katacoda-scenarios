@@ -37,7 +37,16 @@
 		    "chmod": "+x"
                 },
                 {
-                    "file": "setup_mlrunapi.sh",
+                    "file": "setup_jupyter.sh",
+                    "target": "~/",
+		    "chmod": "+x"
+		},
+                {
+                    "file": "mlrunui.yaml",
+                    "target": "~/"
+		},
+                {
+                    "file": "setup_mlrunui.sh",
                     "target": "~/",
 		    "chmod": "+x"
                 }
