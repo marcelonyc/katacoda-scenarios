@@ -18,7 +18,7 @@ echo "Create PVC and PV"
 kubectl apply -f pv_local.yaml >> deployment.log   2>&1
 
 echo "Create Nginix"
-#kubectl run nginx --image=nginx --replicas=1  deployment.log 2>&1
+kubectl run nginx --image=nginx --replicas=1 >> deployment.log 2>&1
 
 
 mkdir -p /tmp/mlrun/mlrun_course
