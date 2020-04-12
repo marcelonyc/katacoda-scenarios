@@ -58,7 +58,7 @@ echo
 cp *.ipynb /tmp/mlrun/mlrun_course/.
 cp start_mlrun.sh /tmp/mlrun/mlrun_course/.
 
-kubectl exec -d `kubectl get pods |grep jupyter |awk '{print $1}'` /home/jovyan/mlrun/mlrun_course/start_mlrun.sh
+kubectl exec  `kubectl get pods |grep jupyter |awk '{print $1}'` /home/jovyan/mlrun/mlrun_course/start_mlrun.sh
 
 echo "+++++++++++++++++++++" >>  deployment.log   2>&1
 echo "DEPLOYMENT COMPLETED"  >>  deployment.log   2>&1
