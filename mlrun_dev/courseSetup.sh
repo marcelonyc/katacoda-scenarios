@@ -56,6 +56,7 @@ echo
 echo
 
 cp *.ipynb /tmp/mlrun/mlrun_course/.
+cp *.py /tmp/mlrun/mlrun_course/.
 cp start_mlrun.sh /tmp/mlrun/mlrun_course/.
 sleep 1
 chown -R 1000 /tmp/mlrun

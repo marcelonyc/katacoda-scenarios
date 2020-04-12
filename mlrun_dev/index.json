@@ -27,6 +27,10 @@
                     "target": "~/"
                 },
                 {
+                    "file": "functions.py",
+                    "target": "~/"
+                },
+                {
                     "file": "01-runlocal.ipynb",
                     "target": "~/"
                 },
