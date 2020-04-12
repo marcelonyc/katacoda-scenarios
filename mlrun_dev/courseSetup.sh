@@ -48,7 +48,7 @@ do
      sleep 10
      kubectl get pods|grep jupy|grep Runn > /dev/null
 done
-chown -R 1000 /tmp/mlrun
+
 clear
 echo
 echo
@@ -57,6 +57,8 @@ echo
 
 cp *.ipynb /tmp/mlrun/mlrun_course/.
 cp start_mlrun.sh /tmp/mlrun/mlrun_course/.
+sleep 1
+chown -R 1000 /tmp/mlrun
 
 kubectl exec  `kubectl get pods |grep jupyter |awk '{print $1}'` /home/jovyan/mlrun/mlrun_course/start_mlrun.sh
 
